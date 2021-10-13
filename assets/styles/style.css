@@ -1,0 +1,54 @@
+/* Regra do CSS */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #00d6b7;
+  margin: 16px;
+}
+header {
+  margin-bottom: 120px;
+}
+
+.nav-menu-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* Seletor descendente */
+
+.nav-menu-list li {
+  display: inline;
+}
+.nav-menu-list li a {
+  text-decoration: none;
+}
+.main-title {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+figcaption {
+  font-style: italic;
+}
+
+/* Seletores do CSS */
+/* Nome de tag */
+
+/* li {
+  display: inline;
+} */
+
+/* Classe */
+
+/* O ponto não faz parte do nome da classe, só serve para diferenciar uma classe de um nome de tag ou ID */
+/* .nav-menu-item {
+  display: inline;
+}*/
+
+/* ID */
+
+/* O seletor de ID não é muito usado pois o atributo id é único para aquela determinada tag em todo o documento (não pode haver duas tags com o mesmo id)*/
+
+/* #nav-menu-item {
+  display: inline;
+} */
+
+/* Ainda quero ajustar o tamanho da imagem*/

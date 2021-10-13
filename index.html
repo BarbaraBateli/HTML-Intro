@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2? family = Open + Sans & display = swap "
+      rel=" stylesheet "
+    />
+
+    <!--"Ligando o nosso arquivo HTML ao arquivo CSS-->
+    <link href="./assets/styles/style.css" rel="stylesheet" type="text/css" />
+
+    <title>Document</title>
+
+    <!-- Evitamos fazer o CSS na tag style pois polui nossa camada de conteúdo com responsabilidades da camada de apresentação -->
+    <!-- <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- HTML semântico: denota significado com as suas tags -->
+    <!-- Neste exemplo foi usado <nav> porque trata-se de um menu de navegação -->
+    <!--Search Engine Optimization e acessibilidade -->
+    <header>
+      <nav>
+        <!-- Usa-se <ul> para listas não ordenadas, pois a ordem dos itens não afetam o conteúdo -->
+        <ul class="nav-menu-list">
+          <!-- Exemplo de como usamos classes e ids do CSS no HTML -->
+          <!-- <li id="nav-menu-item" class="nav-menu-item"> -->
+          <li>
+            <!-- Usamos o <a> quando trata-se de um link para outro documento -->
+            <a href="/home"> HOME</a>
+            |
+          </li>
+          <li>
+            <a href="/about-us"> ABOUT US </a>
+            |
+          </li>
+          <li>
+            <a href="/menu"> MENU </a>
+            |
+          </li>
+          <li>
+            <a href="/about-us"> ABOUT US </a>
+            |
+          </li>
+          <li>
+            <a href="/contact-us"> CONTACT US </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Evitamos usar CSS inline pelo mesmo motivo da tag <style>, e para evitar problemas de especificidade no CSS -->
+      <!-- <h1 style="color: red"> The Ironhack Breakfast Place </h1> -->
+      <h1 class="main-title">The IronHack Breakfast Place</h1>
+
+      <p>Here will find all sorts of delicious treats.</p>
+
+      <!-- Aqui usamos a <figure> para definir uma imagem com legenda-->
+      <figure>
+        <!-- Self-closing tag: tags que não aceitam outras tags ou textos como filhos-->
+        <img
+          src="./assets/images/vegan-breakfast.jpeg"
+          alt="A vegan breakfast with a bowl of colorful organic fruit"
+        />
+        <figcaption>powered by brekkie.</figcaption>
+      </figure>
+    </main>
+    <footer class="nav-menu-list">
+      <p>Made with love by Ironhack</p>
+    </footer>
+  </body>
+</html>
